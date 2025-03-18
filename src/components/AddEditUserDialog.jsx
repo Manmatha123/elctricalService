@@ -17,11 +17,7 @@ const AddEditUserDialog = ({ open, onClose, user, onSave }) => {
         }
     }, [user]);
 
-    const handleSave = () => {
-        const userData = { name, email, role };
-        onSave(userData);
-        onClose();
-    };
+
 
     return (
         <>
