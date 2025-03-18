@@ -4,11 +4,14 @@ import "../styles/Footer.css"
  function Footer() {
     return (
       <footer className="bg-gray-700 text-white text-sm">
-        <div className="bg-red-700 py-4 flex justify-between items-center px-8">
-          <span>
+        <div className="bg-red-700 py-4 flex justify-between items-center footer-container px-8">
+         <div>
+         <span className='copy-right'>
             Copyright &copy; <strong>sky-electrical</strong> - 2025
           </span>
-          <div className="flex space-x-4">
+         </div>
+
+          <div className="flex footer-social"  >
             <a href="https://facebook.com" className="text-white hover:text-gray-300">
               <i className="fab fa-facebook-f"></i>
             </a>

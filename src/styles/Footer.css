@@ -1,14 +1,17 @@
-.footer {
-    background-color: #4a4a4a; /* Gray background */
+footer {
+    background-color: #ff0808; /* Gray background */
     color: white;
     font-size: 14px;
+    width: 100vw;
+    margin-top: 100px;
   }
   
   .footer-container {
     background-color: #a51c30; /* Red section */
-    padding: 16px 32px;
+ height: 60px;padding:  0 40px;
     display: flex;
-    justify-content: space-between;
+    position: fixed;z-index: 1000;bottom: 0;
+    justify-content: space-between;width: 100%;
     align-items: center;
   }
   
@@ -25,4 +28,20 @@
   .footer-container a:hover {
     color: #d3d3d3;
   }
-  
+  .footer-social {
+   position:relative;
+   right:80px
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      padding: 0 10px;
+    }
+    .footer-social {
+      position:relative;
+      right:20px
+     }
+     .copy-right{
+      font-size: 12px;
+     }
+  }
