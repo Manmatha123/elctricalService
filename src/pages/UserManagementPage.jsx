@@ -8,13 +8,10 @@ const UserManagementPage = () => {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const [currentUser, setCurrentUser] = useState(null);
 
-    const handleAddUser = () => {
-        setCurrentUser(null);
-        setIsDialogOpen(true);
-    };
 
     const handleEditUser = (user) => {
         setCurrentUser(user);
+        console.log(isDialogOpen);
         setIsDialogOpen(true);
     };
 
