@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    background-color: #222;
+    
+    color: white;
+    position: fixed;
+    z-index: 100;width: 100vw;
+    margin-bottom: 90px;top: 0px;
+  }
+  
+  .logo {
+    font-size: 24px;display: flex;
+    text-decoration: none;
+    color: white;margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .nav-right .login-button {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 5px;position: relative;right: 30px;
+    transition: 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: white;
+    color: #222;
+  }
+
+  .esp-logo {
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .esp {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .e { left: 0; top: 0; transform: rotate(0deg); color: rgb(255, 196, 0);}
+  .s { left: 16px; top: 5px; transform: rotate(0deg); color: aliceblue;}
+  .p { left: 32px; top: -1px; transform: rotate(0deg);color: rgb(0, 128, 90); }

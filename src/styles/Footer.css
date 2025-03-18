@@ -1,0 +1,28 @@
+.footer {
+    background-color: #4a4a4a; /* Gray background */
+    color: white;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    background-color: #a51c30; /* Red section */
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-container span {
+    font-weight: bold;
+  }
+  
+  .footer-container a {
+    color: white;
+    margin-left: 10px;
+    transition: color 0.3s;
+  }
+  
+  .footer-container a:hover {
+    color: #d3d3d3;
+  }
+  
