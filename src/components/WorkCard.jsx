@@ -4,7 +4,7 @@ function WorkCard() {
   return (
     <>
     <div className="patient-card">
-      <h3 className="title">Earthing work Transation Info</h3>
+      <h3 className="title">Earthing work Transaction Info</h3>
       <div className="info-grid">
         <div className="info-item">
           <strong>workId:</strong> SKYE-000056
