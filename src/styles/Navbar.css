@@ -7,8 +7,9 @@
     
     color: white;
     position: fixed;
-    z-index: 100;width: 100vw;
-    margin-bottom: 90px;top: 0px;
+    z-index: 10000;
+    width: 100vw;
+   top: 0px;
   }
   
   .logo {

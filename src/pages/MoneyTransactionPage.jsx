@@ -4,10 +4,9 @@ import '../styles/styles.css';
 
 const MoneyTransactionPage = () => {
     return (
-        <div>
-            <h1>Money Transactions</h1>
+        <>
             <TransactionTable />
-        </div>
+        </>
     );
 };
 

@@ -7,7 +7,7 @@ import "../styles/Footer.css"
         <div className="bg-red-700 py-4 flex justify-between items-center footer-container px-8">
          <div>
          <span className='copy-right'>
-            Copyright &copy; <strong>sky-electrical</strong> - 2025
+             &copy; <strong>sky-electrical</strong> - 2025
           </span>
          </div>
 

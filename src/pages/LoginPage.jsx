@@ -5,16 +5,19 @@ import { useState } from 'react';
 import '../styles/Login.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
 
 export default function LoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
+const navigate=useNavigate();
   return (
     <>
-  
-    <div className="login-container">
+  <div className="login-main-container">
+
+ 
     <Navbar/>
+    <div className="login-container">
       <motion.div 
         initial={{ opacity: 0, y: -50 }} 
         animate={{ opacity: 1, y: 0 }} 
@@ -22,7 +25,7 @@ export default function LoginPage() {
         className="login-box"
       >
         <div className="login-form">
-          <h2 className="title">
+          <h2 className="login-title">
           <i class="fa-solid fa-bolt" style={{marginRight:"5px"}}></i>   Electrical Service
           </h2>
 
@@ -42,7 +45,7 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)} 
               className="input-field"
             />
-            <button className="login-button">Login</button>
+            <button className="login-button" onClick={()=>navigate("/works")}>Login</button>
           </div>
         </div>
         <div className="login-image">
@@ -59,6 +62,7 @@ export default function LoginPage() {
       </motion.div>
     </div>
       <Footer/>
+      </div>
     </>
   );
 }

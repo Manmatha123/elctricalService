@@ -1,0 +1,167 @@
+/* Container Styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.work-container {
+    width: 100vw;
+    display: flex;min-height: 100vh;
+    align-items: center;margin: 0;
+    flex-direction: column;position: relative;
+    padding:0px  20px 20px 20px;
+    background-color: #f4f6f9;top: 0px;
+  }
+  
+  /* Table Wrapper */
+  .table-wrapper {
+    width: 90%;height: auto;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 0px 0px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  /* Table Styling */
+  .work-table,.transaction-table {
+    width: 100%;height: auto;
+    border-collapse: collapse;
+  }
+  
+  /* Table Header */
+  .work-table th,.transaction-table th {
+    background-color: #f8f9fa;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #eaeaea;
+  }
+  
+  /* Table Rows */
+  .work-table td,.transaction-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  /* Name Cell */
+  .name-cell {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Avatar */
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Subtext */
+  .subtext {
+    color: gray;
+    font-size: 12px;
+  }
+  
+  /* Amount */
+  .amount {
+    font-weight: bold;
+  }
+  
+  /* Status Styles */
+  .status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  .status-receive {
+    color: green;
+    background-color: #e6f8e6;
+  }
+  
+  .status-transfer {
+    color: orange;
+    background-color: #fff3cd;
+  }
+  
+  .status-payment {
+    color: red;
+    background-color: #f8d7da;
+  }
+  
+  .status-withdraw {
+    color: purple;
+    background-color: #e5d8f6;
+  }
+  
+  .status-deposit {
+    color: blue;
+    background-color: #d6e4ff;
+  }
+  
+  /* Button Styling */
+  .details-btn {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .details-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Hover Effects */
+  .work-table tr:hover,.transaction-table tr:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+
+  .money-calculation{
+    width: 90%;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    background-color: #b8b8b8; 
+border-radius: 0 0 8px 8px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .work-container {
+      padding: 5px;
+    }
+    .money-calculation{
+      width: 100%;
+    }  
+    .table-wrapper {
+      width: 100%;
+      padding: 10px 0;
+    }
+    
+    .work-table th:nth-child(3), /* Hide "Transaction" column */
+    .work-table th:nth-child(4), /* Hide "View" column */
+    .work-table td:nth-child(3),
+    .work-table td:nth-child(4) {
+        display: none;
+    }
+
+    .transaction-table th:nth-child(1), /* Hide "View" column */
+    .transaction-table td:nth-child(1) {
+        display: none;
+    }
+
+
+  }
+
