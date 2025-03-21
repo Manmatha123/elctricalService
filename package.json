@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "framer-motion": "^12.5.0",
+    "lucide-react": "^0.483.0",
     "react": "^18.2.0",
     "react-app": "file:",
     "react-dom": "^18.2.0",

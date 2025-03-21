@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../styles/MyWork.css";
 import UserCard from '../components/UserCard';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Navigate, useNavigate } from 'react-router-dom';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
+import AddEditUserDialog from '../components/AddEditUserDialog';
+import WorkAddEdit from '../components/WorkAddEdit';
+import TableHeader from '../components/TableHeader';
 
 function MyWork() {
 const navigate=useNavigate();
@@ -121,11 +125,25 @@ const navigate=useNavigate();
         },
     ];
 
+        const [open, setOpen] = useState(false);
+    
+        const handleOpen = () => {
+          setOpen(true);
+        };
+      
+        const handleClose = () => {
+          setOpen(false);
+        };
+
+        const handleSaveUser = (user) => {
+         
+        };
     return (
         <>
                 <Navbar/>
             <div className="work-container">
                 <UserCard/>
+                <TableHeader  handleOpen={handleOpen}/>
                 <div className="table-wrapper">
                     <table className="work-table">
                         <thead>
@@ -170,6 +188,32 @@ const navigate=useNavigate();
                     </table>
                 </div>
                 <Footer/>
+
+
+                <Dialog 
+  open={open} 
+  onClose={handleClose} 
+  sx={{ '& .MuiDialog-paper': { width: '80%', maxWidth: '800px' } }}
+>
+  <DialogTitle>Work Add Edit</DialogTitle>
+  <DialogContent
+     sx={{
+        overflow: 'auto', // Enables scrolling
+        '&::-webkit-scrollbar': { display: 'none' }, // Hides scrollbar in WebKit browsers
+        '-ms-overflow-style': 'none', // Hides scrollbar in IE and Edge
+        'scrollbar-width': 'none', // Hides scrollbar in Firefox
+      }}
+  >
+    <WorkAddEdit
+      user={"currentUser"} 
+      onClose={handleClose} 
+      onSave={handleSaveUser} 
+    />
+  </DialogContent>
+  <DialogActions>
+    <Button onClick={handleClose}>Close</Button>
+  </DialogActions>
+</Dialog>
             </div>
         </>
     )

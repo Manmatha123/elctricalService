@@ -68,3 +68,42 @@ const AddEditUserDialog = ({ open, onClose, user, onSave }) => {
 };
 
 export default AddEditUserDialog;
+
+ {/* <div className="profile-container">
+      <div className="profile-header">
+        <img
+          className="profile-pic"
+          src="https://via.placeholder.com/100"
+          alt="Profile"
+        />
+        <div className="profile-info">
+          <h2>{formData.firstName} {formData.lastName}</h2>
+          <p><span>190</span> Followers <span>21</span> Viewing</p>
+        </div>
+      </div>
+      <div className="profile-form">
+        <h3>Personal details</h3>
+        <div className="form-group">
+          <label>First name</label>
+          <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} />
+        </div>
+        <div className="form-group">
+          <label>Last name</label>
+          <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} />
+        </div>
+        <div className="form-group">
+          <label>Mobile number</label>
+          <input type="text" name="mobileNumber" value={formData.mobileNumber} onChange={handleChange} />
+        </div>
+        <div className="form-group">
+          <label>Email ID</label>
+          <input type="email" name="email" value={formData.email} onChange={handleChange} />
+        </div>
+        <div className="form-group">
+          <label>Service provider URL</label>
+          <input type="text" name="serviceProviderUrl" value={formData.serviceProviderUrl} onChange={handleChange} placeholder="Paste URL" />
+        </div>
+        <button className="save-btn">Save changes</button>
+      </div>
+    </div> */}
+    
